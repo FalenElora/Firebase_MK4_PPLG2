@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "365832696820",
+    "project_id": "ppb-rpl2-46659",
+    "storage_bucket": "ppb-rpl2-46659.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365832696820:android:64da3c4b78f1d9f8523fa1",
+        "android_client_info": {
+          "package_name": "com.falen.firebase_8_31_pplg2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365832696820-0avkhbo78j2qpdhh6hqvkbel4b9qpu9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.falen.firebase_8_31_pplg2",
+            "certificate_hash": "7cf51530558669b7022263b03910cd5573d82a65"
+          }
+        },
+        {
+          "client_id": "365832696820-uo2bc356jvvsvd0mtjhr99cjmvip8drg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTycsYYptBxZyOp7XFeRki5IVOIT6-i_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365832696820-uo2bc356jvvsvd0mtjhr99cjmvip8drg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
