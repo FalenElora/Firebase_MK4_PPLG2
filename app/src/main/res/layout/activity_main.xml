@@ -1,47 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
     android:background="@android:color/white">
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name: "
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/tvUserId"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User ID: "
-        android:textSize="16sp"
-        android:layout_marginBottom="16dp"
-        android:textColor="@android:color/darker_gray" />
-
-    <Button
-        android:id="@+id/btnEmailVerify"
+    <!-- Bagian Header: Info Pengguna + Tombol Aksi -->
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Verification Email"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp">
+
+        <!-- Info User di kiri atas -->
+        <LinearLayout
+            android:id="@+id/llUserInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvUserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User ID: "
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- Tombol Verifikasi dan Logout di kanan atas -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/btnEmailVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verifikasi"
+                android:textSize="12sp"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="12sp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DailyMoji"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#374151"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Daftar Emoji -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPerasaan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5"
+        android:padding="8dp"
+        android:clipToPadding="false"
         android:layout_marginBottom="16dp" />
 
+    <!-- Tombol Tambah -->
     <Button
-        android:id="@+id/btnSignOut"
+        android:id="@+id/btnAddPerasaan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Out"
-        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Tambah Emoji"
+        android:textSize="16sp"
+        android:backgroundTint="#FFD93D"
         android:textColor="@android:color/white" />
 </LinearLayout>

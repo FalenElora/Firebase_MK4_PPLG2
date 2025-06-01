@@ -1,0 +1,55 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:padding="16dp"
+    android:backgroundTint="#FAFAFA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:text="Tanggal"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPerasaan"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@id/tvTanggal"
+            android:text="Mood"
+            android:textColor="#374151"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAlasan"
+            android:layout_width="363dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPerasaan"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="18dp"
+            android:text="Alasan"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

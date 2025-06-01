@@ -50,17 +50,18 @@
     <!-- Tombol Buat Akun -->
     <Button
         android:id="@+id/btnCreateAccount"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Create Account"
-        android:backgroundTint="@color/purple_500"
-        android:textColor="@color/white"
+        android:layout_width="365dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFD93D"
+        android:textSize="16sp"
         android:padding="12dp"
-        android:background="@drawable/button_background"
-        app:layout_constraintTop_toBottomOf="@id/inputPassword"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="Create Account"
+
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword" />
 
     <!-- Link ke Halaman Login -->
     <TextView
